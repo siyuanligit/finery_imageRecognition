@@ -15,5 +15,5 @@ The `downloadImg.py`  demonstrates how we automatically download, categorize and
 
 `Training.ipynb` includes the training code for image recognition models. It demonstrates the process of training ResNet50 and VGG16 models on both binary and multi-class classification. 
 
-`Demo.ipynb` includes the demo code for testing the trained model on given images. It loads models previously trained in `Training.ipynb` and test them on chosen image (stored in `\img`). Here we include a VGG16 model (`best_vgg.hdf5`) that is trained on Finery data. Here we also use `labelDecode.py` as helper function to decode the prediction array.
+`Demo.ipynb` includes the demo code for testing the trained model on given images. It loads models previously trained in `Training.ipynb` and test them on chosen image (stored in `\img`). Here we include a VGG16 model (`best_vgg.hdf5`) that is trained on Similar data. Here we also use `labelDecode.py` as helper function to decode the prediction array.
 
