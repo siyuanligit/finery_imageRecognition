@@ -11,8 +11,9 @@
 
 ### Files
 
-The `downloadImg.py` will automatically download, categorize and convert images using given link in `dfClean.csv`. These images will be put into their corresponding categories automatically. Note that `dfClean.csv` includes images from sources that are protected by NDA, thus is not shared on the repo.
+The `downloadImg.py`  demonstrates how we automatically download, categorize and convert images using links in `dfClean.csv`, which contains the sources of training images. These images will be put into their corresponding categories automatically. Note that `dfClean.csv` includes images from sources that are protected by NDA, thus is not shared on the repo.
 
-`modelTraining.ipynb` includes the training code for image recognition models. It demonstrates the process of training ResNet50 and VGG16 models on both binary and multi-class classification. 
+`Training.ipynb` includes the training code for image recognition models. It demonstrates the process of training ResNet50 and VGG16 models on both binary and multi-class classification. 
 
-`presentationDemo.ipynb` includes the demo code for testing the trained model on given images. It loads models previously trained in `modelTraining.ipynb` and test them on chosen image. Here we include a VGG16 model (`best_vgg.hdf5`) that is trained on Finery data.
+`Demo.ipynb` includes the demo code for testing the trained model on given images. It loads models previously trained in `Training.ipynb` and test them on chosen image (stored in `\img`). Here we include a VGG16 model (`best_vgg.hdf5`) that is trained on Finery data. Here we also use `labelDecode.py` as helper function to decode the prediction array.
+
